@@ -255,11 +255,12 @@ namespace ExcelUnprotect
                                 // Get a list of nodes with the tag to be removed.
                                 XmlNodeList nodes = document.DocumentElement.SelectNodes("//x:protectedRanges", nsmgr);
 
-                                if (nodes == null) return;
-
-                                foreach (XmlNode node in nodes)
+                                if (nodes != null)
                                 {
-                                    document.DocumentElement.RemoveChild(node);
+                                     foreach (XmlNode node in nodes)
+                                    {
+                                        document.DocumentElement.RemoveChild(node);
+                                    }
                                 }
 
                                 // Get a list of nodes with the tag to be removed.
