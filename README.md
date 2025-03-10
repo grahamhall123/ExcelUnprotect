@@ -8,5 +8,5 @@ How to use:
 
 It should give you a list of sheets that are protected and prompt to remove. If no output file is given it will create a new file with the same filename with _-unprotected_ appended to it.
 
-*_Note_: It can't be used on spreadsheets that have been password protected to stop them from being opened.*
+*_Note_: It can't be used on spreadsheets that have been encrypted.*
 
